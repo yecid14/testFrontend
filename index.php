@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Horario de Asesores</title>
+        <title>Aerolinea</title>
         <meta charset="utf-8">
 
         <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
@@ -236,7 +236,7 @@
 
                 $.ajax({
                     type: "GET",
-                    url: "/testBackend_yecid/consultas.php?mostrar_ciudad",
+                    url: "/testBackend/consultas.php?mostrar_ciudad",
                     success: function (resulta)
                     {
                         var result = jQuery.parseJSON(resulta);
@@ -263,7 +263,7 @@
 
                     $.ajax({
                         type: "GET",
-                        url: "/testBackend_yecid/consultas.php?mostrar_ciudad&id_o=" + id_o,
+                        url: "/testBackend/consultas.php?mostrar_ciudad&id_o=" + id_o,
                         success: function (resulta)
                         {
                             var result = jQuery.parseJSON(resulta);
@@ -288,7 +288,7 @@
 
                     $.ajax({
                         type: "POST",
-                        url: "/testBackend_yecid/consultas.php",
+                        url: "/testBackend/consultas.php",
                         data: $("#form_consul").serialize(),
                         success: function (data)
                         {
