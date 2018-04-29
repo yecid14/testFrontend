@@ -153,79 +153,60 @@
 
             </section>
 
-            <!--            <footer id="footer_wrapper">
-                            <div class="footer-content">
-                                <div class="row">
-                                    <div class="col-xs-12 col-sm-6">
-                                        <h6 class="card-title">Vuelos económicos</h6>
-                                        <p>En nuestro sitio web puedes encontrar una amplia variedad de tiquetes aéreos y vuelos económicos, paquetes turísticos
-                                            y mucho más. Puedes elegir tu destino favorito y comenzar a planificar tus tan esperadas vacaciones ahora. 
-                                            Además puedes consultar disponibilidad de vuelos de forma rápida y sencilla,
-                                            para poder encontrar la opción que más se ajuste a tus necesidades. 
-                                            Tenemos ofertas a miles de destinos. Reserva ahora tu viaje.</p>
-                                    </div>
-                                    <div class="col-xs-12 col-sm-2">
-            
-                                    </div>
-                                    <div class="col-xs-12 col-sm-4">
-                                        <h6 class="card-title">Ofertas exclusivas en tu email</h6>
-                                        <p>Recibirás emails promocionales de Despegar.com, no compartiremos tus datos personales con terceros. Para más información consulta las políticas de privacidad.</p>
-                                        <div class="form-group is-empty">
-                                            <div class="input-group">
-                                                <input type="email" class="form-control" id="footerEmail" placeholder="Ingresa tu correo electrónico...">
-                                                <span class="input-group-btn">
-                                                    <button type="button" class="btn btn-white btn-fab animate-fab btn-fab-sm">
-                                                        <i class="zmdi zmdi-mail-send"></i>
-                                                    </button>
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row copy-wrapper">
-                                    <div class="col-xs-8">
-                                        <p class="copy">© Copyright <time class="year">2018</time> </p>
-                                    </div>
-                                    <div class="col-xs-4">
-                                        <ul class="social">
-                                            <li>
-                                                <a href="javascript:void(0)"><i class="zmdi zmdi-facebook-box"></i></a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0)"><i class="zmdi zmdi-instagram"></i> </a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0)"><i class="zmdi zmdi-twitter-box"></i> </a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0)"><i class="zmdi zmdi-linkedin"></i> </a>
-                                            </li>
-                                        </ul>
-                                    </div>
+<!--            <footer id="footer_wrapper">
+                <div class="footer-content">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6">
+                            <h6 class="card-title">Vuelos económicos</h6>
+                            <p>En nuestro sitio web puedes encontrar una amplia variedad de tiquetes aéreos y vuelos económicos, paquetes turísticos
+                                y mucho más. Puedes elegir tu destino favorito y comenzar a planificar tus tan esperadas vacaciones ahora. 
+                                Además puedes consultar disponibilidad de vuelos de forma rápida y sencilla,
+                                para poder encontrar la opción que más se ajuste a tus necesidades. 
+                                Tenemos ofertas a miles de destinos. Reserva ahora tu viaje.</p>
+                        </div>
+                        <div class="col-xs-12 col-sm-2">
+
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <h6 class="card-title">Ofertas exclusivas en tu email</h6>
+                            <p>Recibirás emails promocionales de Despegar.com, no compartiremos tus datos personales con terceros. Para más información consulta las políticas de privacidad.</p>
+                            <div class="form-group is-empty">
+                                <div class="input-group">
+                                    <input type="email" class="form-control" id="footerEmail" placeholder="Ingresa tu correo electrónico...">
+                                    <span class="input-group-btn">
+                                        <button type="button" class="btn btn-white btn-fab animate-fab btn-fab-sm">
+                                            <i class="zmdi zmdi-mail-send"></i>
+                                        </button>
+                                    </span>
                                 </div>
                             </div>
-                        </footer>-->
-
-        </div>
-
-        <div class="modal fade" id="modal_detalle" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title card-title" id="exampleModalLabel">RESERVA DE VUELO</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
+                        </div>
                     </div>
-                    <div class="modal-body" id="respuesta_detalle">
-
+                    <div class="row copy-wrapper">
+                        <div class="col-xs-8">
+                            <p class="copy">© Copyright <time class="year">2018</time> </p>
+                        </div>
+                        <div class="col-xs-4">
+                            <ul class="social">
+                                <li>
+                                    <a href="javascript:void(0)"><i class="zmdi zmdi-facebook-box"></i></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"><i class="zmdi zmdi-instagram"></i> </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"><i class="zmdi zmdi-twitter-box"></i> </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"><i class="zmdi zmdi-linkedin"></i> </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-
                 </div>
-            </div>
+            </footer>-->
+
         </div>
-
-
 
         <script>
             $(document).ready(function () {
@@ -283,9 +264,9 @@
                 });
 
                 $('#btn_consultar').click(function () {
-
+                    
                     $('#loader').show();
-
+                
                     $.ajax({
                         type: "POST",
                         url: "/testBackend_yecid/consultas.php",
@@ -300,8 +281,6 @@
 
 
                 });
-
-
 
 
 
